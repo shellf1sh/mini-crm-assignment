@@ -1,0 +1,36 @@
+project_id = "mini-crm-assignment"
+
+[api]
+port = 55431
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+
+[db]
+port = 55432
+shadow_port = 55430
+major_version = 17
+
+[db.seed]
+enabled = false
+
+[studio]
+enabled = false
+
+[storage]
+enabled = false
+
+[realtime]
+enabled = false
+
+[analytics]
+enabled = false
+
+[edge_runtime]
+enabled = false
+
+[auth]
+site_url = "http://127.0.0.1:5173"
+enable_signup = false
+
+[auth.email]
+enabled = true
